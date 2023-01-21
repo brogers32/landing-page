@@ -4,13 +4,14 @@ body {
     color: #f9faf8;
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 
 .header {
     background-color: #1f2937;
     display: flex;
     flex-direction: column;
-    padding: 0 192px;
+    padding: 0px 192px 96px;
 }
 
 .header > .heading {
@@ -23,7 +24,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0 64px 0;
 }
 
 .logo {
@@ -50,24 +50,23 @@ body {
 }
 
 button {
-    border: 0px solid red;
+    border: 2px solid #3882f6;
     border-radius: 8px;
     background-color: #3882f6;
-    color: #eeeeee;
-    padding: 6px 24px;
+    color: #f9faf8;
+    padding: 4px 22px;
     flex: none;
 }
 
-img {
+.header > .content > img {
     width: 480px;
-    border-radius: 16px;
 }
 
 .information {
     display: flex;
     flex-direction: column;
     color: #1f2937;
-    padding: 48px 0px;
+    padding: 48px 0px 96px;
 }
 
 .info-header {
@@ -99,6 +98,8 @@ img {
 
 .info-image > img {
     width: 150px;
+    border: solid #3882f6 4px;
+    border-radius: 16px;
 }
 
 ul {
@@ -109,7 +110,47 @@ ul {
 
 a {
     text-decoration: none;
-    color: #eeeeee;
+    color: #f9faf8;
+}
+
+.quote-section {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    padding: 96px 384px;
+    gap: 24px;
+}
+
+.quote-source {
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.call-to-action {
+    padding: 96px 192px;
+    color: f9faf8;
+}
+
+.call-to-action > .content {
+    background-color: #3882f6;
+    padding: 48px 96px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.call-to-action > .content > button {
+    border-color: #f9faf8;
 }
 
 .footer {
